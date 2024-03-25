@@ -1,0 +1,31 @@
+---
+ const personalImageAlt = "Joaquin Dalmasso"
+ import LinkButton from './LinkButton.astro'
+---
+
+<article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row">
+    <div
+      class="[&>p]:mb-4 [&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+    >
+      <p>
+        Me llamo Joaquin Dalmasso. Soy Ingeniero Mecánico graduado de la Universidad Nacional de Rio Cuarto. Luego de recibirme como ingeniero y debido a que siempre fui un apasionado por la computación, empecé mi aprendizaje en el mundo de la programación con un Arduino y realizando dos cursos para aprender sobre el mismo.
+      </p>
+      
+      <p>
+        Posterior a eso comencé a estudiar Python, por lo cual, me inscribí en la escuela de Data Science de la plataforma Platzi, en donde complete hasta el 80%. Debido a que cambie mi antiguo trabajo como ingeniero de producto a un trabajo como desarrollador .NET y me dedique a mejorar mis habilidades en esta plataforma ya que es la que utilizo a diario en mi trabajo.
+      </p>
+      <p>
+        Además, actualmente me encuentro realizando el curso de Full Stack Open en el cual llevo completo hasta la parte 5 incluida. Como se puede ver en el certificado o en mi canal de YouTube.
+      </p>
+     <p>
+        Mi visión a futuro es mejorar mis habilidades en los diversos lenguajes y tecnologías que he explorado, con el objetivo de contribuir a proyectos más desafiantes. Estoy emocionado por las oportunidades que se presenten y estoy listo para enfrentar nuevos desafíos con determinación y entusiasmo.
+      </p>
+
+      <LinkButton href="DalmassoJoaquinCV.pdf" download="Dalmasso_Joaquin_CV">
+        Descargar mi CV
+      </LinkButton>
+    </div>
+  
+    <img width="200" height="200" src="/ImagenInformal.webp" alt={personalImageAlt} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 " style="object-position: 50% 50%">
+  
+  </article>

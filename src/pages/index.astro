@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../icons/LinkedIn.astro';
+import GitHubIcon from '../icons/GitHub.astro';
+import YouTubeIcon from '../icons/YouTube.astro';
+import Experiencia from '../components/Experiencia.astro';
+import SectionContainer from '../components/SectionContainer.astro'
+import Projects from '../components/Projects.astro';
+import SobreMi from '../components/SobreMi.astro';
+---
+
+<Layout title="Portfolio de Joaquin Dalmasso - Ingeniero y desarrollador de software">
+	<main class="px-4">
+		<SectionContainer class="py-36 pb-22"> 
+			<img
+			class="rounded-full size-28 mb-4" 
+			src="https://media.licdn.com/dms/image/D4D03AQGJMVmBmITlPQ/profile-displayphoto-shrink_200_200/0/1710896169767?e=1716422400&v=beta&t=JQyTpGwjBxIII4dbv6R0FYAKZRA1XImcd_a6nZe338E" 
+			alt="foto principal"
+			/>
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl fond-bold flex flex-row gap-x-4 pb-10">Hola! Soy Joaquin Dalmasso
+			</h1>
+			<h2 class="text-xl lg:text-2xl  opacity-80 text-justify max-w-[700px]">Tengo +2 años de experiencia trabajando en el área de la Ingenieria y actualmente trabajo como Desarrollador de software .NET
+			</h2>
+
+			<ul>
+				<nav class="flex item-center gap-x-5 mt-8">
+					<a href="https://www.linkedin.com/in/joaquindalmasso">
+					<LinkedInIcon class="size-6 hover:scale-110" />
+					</a>
+					<a href="https://github.com/JoaquinDalmasso">
+					<GitHubIcon class="size-6 hover:scale-110" />
+					</a>
+					<a href="https://www.youtube.com/@joaquindalmasso">
+					<YouTubeIcon class="size-6 hover:scale-110" />
+					</a>
+				</nav>
+			</ul>
+		</SectionContainer>
+		<SectionContainer id="experiencia" class="py-16">
+			<h2 class="text-4xl font-semibold mb-8 flex gap-x-3 items-center">
+			Experiencia laboral
+			</h2>
+			<Experiencia />
+		</SectionContainer>
+		<SectionContainer id="proyectos" class="py-16">
+			<h2 class="text-4xl font-semibold mb-8 flex gap-x-3 items-center">
+			Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
+		<SectionContainer id="sobre-mi" class="py-16">
+			<h2
+			  class="text-4xl font-semibold mb-8 flex gap-x-3 items-center"
+			>
+			  Sobre mí
+			</h2>
+			<SobreMi />
+		  </SectionContainer>
+	</main>
+</Layout>
