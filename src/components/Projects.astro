@@ -1,5 +1,5 @@
 ---
-import LinkButton from './LinkButton.astro'
+import LinkButton from './LinkButton.astro';
 import GitHubIcon from '../icons/GitHub.astro';
 import Python from '../icons/Python.astro';
 import Pandas from '../icons/Pandas.astro';
@@ -12,140 +12,159 @@ import Arduino from '../icons/Arduino.astro';
 import Youtube from '../icons/YouTube.astro';
 
 const TAGS = {
-    PYTHON: {
-        name: "Python",
-        class: "bg-white text-[#4B8BBE] ",
-        icon: Python,
-    },
-    SQL: {
-        name: "SQL",
-        class: "bg-white text-[#4B8BBE]",
-        icon: SQL,
-    },
-    PANDAS: {
-        name: "Pandas",
-        class: "bg-white text-[#4B8BBE] ",
-        icon: Pandas,
-    },
-    REACT: {
-        name: "React",
-        class: "bg-white text-[#4B8BBE] ",
-        icon: React,
-    },
-    NODE: {
-        name: "Node",
-        class: "bg-white text-[#4B8BBE] ",
-        icon: Node,
-    },
-    MONGO: {
-        name: "MongoDB",
-        class: "bg-white text-[#4B8BBE] ",
-        icon: Mongo,
-    },
-    CSHARP: {
-        name: "C#",
-        class: "bg-white text-[#4B8BBE] ",
-        icon: CSharp,
-    },
-    ARDUINO: {
-        name: "Arduino",
-        class: "bg-white text-[#4B8BBE]",
-        icon: Arduino,
-    },
-}
+  PYTHON: {
+    name: 'Python',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: Python,
+  },
+  SQL: {
+    name: 'SQL',
+    class: 'bg-white text-[#4B8BBE]',
+    icon: SQL,
+  },
+  PANDAS: {
+    name: 'Pandas',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: Pandas,
+  },
+  REACT: {
+    name: 'React',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: React,
+  },
+  NODE: {
+    name: 'Node',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: Node,
+  },
+  MONGO: {
+    name: 'MongoDB',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: Mongo,
+  },
+  CSHARP: {
+    name: 'C#',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: CSharp,
+  },
+  ARDUINO: {
+    name: 'Arduino',
+    class: 'bg-white text-[#4B8BBE]',
+    icon: Arduino,
+  },
+};
 
-const PROJECTS =[
-{
-        title: 'Proyectos en mi actual trabajo',
-        description: 'Me dedico al desarrollo de aplicaciones .NET. Una de las principales funcionalidades que he desarrollado es una aplicacion integral con un inicio de sesion que verifica las credenciales en SQL para permitir el acceso a todas las aplicaciones, donde actualmente estoy trabajando en una aplicación que se conecta a las máquinas a través de la red CAN e interpreta los mensajes que estas envían. Además, he desarrollado una funcionalidad adicional que permite obtener datos de telemetría de las máquinas y generar gráficos comparativos según las preferencias del usuario.',
-        image: '/MetalforProyectos.webp',    
-        tags: [TAGS.CSHARP,TAGS.SQL]
-    },
-{
-        title: 'Full Stack Open',
-        description: 'Realice todos los proyectos y ejercicios propuestos por el curso hasta la parte donde me encuentro actualmente. Por lo que se me entrego un certificado que verifica esto, además, en mi canal de Youtube se pueden ver varios directos en donde realizo los distintos ejercicios.',
-        github: 'https://github.com/JoaquinDalmasso/Fullstack-Open',
-        certificado: 'https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/03bc42f9bd42a0b3f48f67df251d3cb6',
-        link: 'https://fullstackopen.com/es/',
-        image: '/FullStackOpenImagen.webp',
-        tags: [TAGS.REACT,TAGS.NODE,TAGS.MONGO]
-    },
-    {
-        title: 'Modelo Machine Learning sobrevivientes del Titanic de Kaggle',
-        description: 'Ejercicio de Kaggle en el se debe crear un modelo predictivo que determine si una lista de personas sobreviviría o no al accidente del Titanic. Para esto tuve que explorar, limpiar y enriquecer los datos propuestos por la pagina y por último aplicar varios modelos y determinar cual de todos es el mejor.',
-        github: 'https://github.com/JoaquinDalmasso/Modelo_Titanic_Kaggle_1',
-        image: '/ProyectoTitanic.webp',
-        tags: [TAGS.PYTHON,TAGS.PANDAS],
-    },
-    {
-        title: 'Proyecto completo Data Science con datos reales',
-        description: 'Desde un archivo de Excel obtenido de la pagina del gobierno de Mexico. El proyecto se baso en explorar, limpiar y enriquecer estos datos, para luego aplicar diversos modelos de machine learning en un esfuerzo por extraer información relevante.',
-        github: 'https://github.com/JoaquinDalmasso/Ejemplo_primer_proyecto_completo_Data_Science',
-        image: '/PrimerProyectoData.webp',
-        tags: [TAGS.PYTHON,TAGS.PANDAS],
-    },
-    {
-        title: 'Proyecto integrador robot Arduino',
-        description: 'Se trata de un robot con un Arduino, que cuenta con una batería para alimentar el sistema, dos motores para impulsar sus ruedas, dos sensores infrarrojos para medir el color del suelo y una fotorresistencia que mide la intensidad de la luz. De esta forma el robot detecta cuando hay una línea oscura en el piso, se frena y dobla hacia un lado para continuar recto, a la vez, si recibe poca luz prende el led para iluminar su camino. En el link de YouTube se puede ver un video de su funcionamiento.',
-        linkYoutube: 'https://www.youtube.com/watch?v=adXo0MWJ-no&ab_channel=JoaquinDalmasso',
-        image: '/CertificadoArduino.webp',
-        tags: [TAGS.ARDUINO],
-    },
-]
+const PROJECTS = [
+  {
+    title: 'Proyectos en mi actual trabajo',
+    description:
+      'Me dedico al desarrollo de aplicaciones .NET. Una de las principales funcionalidades que he desarrollado es una aplicacion integral con un inicio de sesion que verifica las credenciales en SQL para permitir el acceso a todas las aplicaciones, donde actualmente estoy trabajando en una aplicación que se conecta a las máquinas a través de la red CAN e interpreta los mensajes que estas envían. Además, he desarrollado una funcionalidad adicional que permite obtener datos de telemetría de las máquinas y generar gráficos comparativos según las preferencias del usuario.',
+    image: '/MetalforProyectos.webp',
+    tags: [TAGS.CSHARP, TAGS.SQL],
+  },
+  {
+    title: 'Full Stack Open',
+    description:
+      'Realice todos los proyectos y ejercicios propuestos por el curso hasta la parte 9. Por lo que se me entrego un certificado que verifica la aprobación hasta la parte 7 y otro para la parte 9, además, en mi canal de Youtube se pueden ver varios directos en donde realizo los distintos ejercicios.',
+    github: 'https://github.com/JoaquinDalmasso/Fullstack-Open',
+    certificado:
+      'https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/03bc42f9bd42a0b3f48f67df251d3cb6',
+    link: 'https://fullstackopen.com/es/',
+    image: '/FullStackOpenImagen.webp',
+    tags: [TAGS.REACT, TAGS.NODE, TAGS.MONGO],
+  },
+  {
+    title: 'Modelo Machine Learning sobrevivientes del Titanic de Kaggle',
+    description:
+      'Ejercicio de Kaggle en el se debe crear un modelo predictivo que determine si una lista de personas sobreviviría o no al accidente del Titanic. Para esto tuve que explorar, limpiar y enriquecer los datos propuestos por la pagina y por último aplicar varios modelos y determinar cual de todos es el mejor.',
+    github: 'https://github.com/JoaquinDalmasso/Modelo_Titanic_Kaggle_1',
+    image: '/ProyectoTitanic.webp',
+    tags: [TAGS.PYTHON, TAGS.PANDAS],
+  },
+  {
+    title: 'Proyecto completo Data Science con datos reales',
+    description:
+      'Desde un archivo de Excel obtenido de la pagina del gobierno de Mexico. El proyecto se baso en explorar, limpiar y enriquecer estos datos, para luego aplicar diversos modelos de machine learning en un esfuerzo por extraer información relevante.',
+    github:
+      'https://github.com/JoaquinDalmasso/Ejemplo_primer_proyecto_completo_Data_Science',
+    image: '/PrimerProyectoData.webp',
+    tags: [TAGS.PYTHON, TAGS.PANDAS],
+  },
+  {
+    title: 'Proyecto integrador robot Arduino',
+    description:
+      'Se trata de un robot con un Arduino, que cuenta con una batería para alimentar el sistema, dos motores para impulsar sus ruedas, dos sensores infrarrojos para medir el color del suelo y una fotorresistencia que mide la intensidad de la luz. De esta forma el robot detecta cuando hay una línea oscura en el piso, se frena y dobla hacia un lado para continuar recto, a la vez, si recibe poca luz prende el led para iluminar su camino. En el link de YouTube se puede ver un video de su funcionamiento.',
+    linkYoutube:
+      'https://www.youtube.com/watch?v=adXo0MWJ-no&ab_channel=JoaquinDalmasso',
+    image: '/CertificadoArduino.webp',
+    tags: [TAGS.ARDUINO],
+  },
+];
 ---
-<article class="flex flex-col gap-y-16">
-    {
-    PROJECTS.map(({ image, title, description, tags, link, certificado, github,linkYoutube }) => (
-        <div class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-            <div class="w-full md:w-1/2">
-                <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-                <img class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy"  src={image} alt={`Captura de pantalla del proyecto ${title} `} />
-                </div>
+
+<article class='flex flex-col gap-y-16'>
+  {
+    PROJECTS.map(
+      ({
+        image,
+        title,
+        description,
+        tags,
+        link,
+        certificado,
+        github,
+        linkYoutube,
+      }) => (
+        <div class='flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0'>
+          <div class='w-full md:w-1/2'>
+            <div class='relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50'>
+              <img
+                class='object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105'
+                loading='lazy'
+                src={image}
+                alt={`Captura de pantalla del proyecto ${title} `}
+              />
             </div>
-            
-            <div class="w-full md:w-1/2 md:max-w-lg ">
-                <h3 class="text-2xl font-bold text-[#a2c6e0] mb-2">
-                    {title}
-                </h3>
-                {tags && (
-                    <ul class="flex flex-row mb-2 gap-x-2">
-                    {tags.map((tag) => (
-                        <li>
-                            <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `} >
-                                <tag.icon class="size-4"/> 
-                                {tag.name}
-                            </span>
-                        </li>
-                    ))}
-                </ul>
-                )}
-                <div class="mt-2 text-gray-300 text-justify">{description}</div>
-                    <footer class="flex items-end justify-start mt-4 gap-x-4">
-                        {github && (
-                            <LinkButton href={github}>
-                                <GitHubIcon class="size-6" />
-                                    Code
-                            </LinkButton>
-                        )}
-                        {certificado && (
-                            <LinkButton href={certificado}>
-                                Certificado
-                            </LinkButton>
-                        )}
-                        {link && (
-                            <LinkButton href={link}>
-                                FullStackOpen.com
-                            </LinkButton>
-                        )}
-                        {linkYoutube && (
-                            <LinkButton href={linkYoutube}>
-                                <Youtube class="size-6" />
-                                    Link
-                            </LinkButton>
-                        )}
-                    </footer>
-            </div>
-        </div> 
-    ))
-    }
+          </div>
+
+          <div class='w-full md:w-1/2 md:max-w-lg '>
+            <h3 class='text-2xl font-bold text-[#a2c6e0] mb-2'>{title}</h3>
+            {tags && (
+              <ul class='flex flex-row mb-2 gap-x-2'>
+                {tags.map((tag) => (
+                  <li>
+                    <span
+                      class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                    >
+                      <tag.icon class='size-4' />
+                      {tag.name}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <div class='mt-2 text-gray-300 text-justify'>{description}</div>
+            <footer class='flex items-end justify-start mt-4 gap-x-4'>
+              {github && (
+                <LinkButton href={github}>
+                  <GitHubIcon class='size-6' />
+                  Code
+                </LinkButton>
+              )}
+              {certificado && (
+                <LinkButton href={certificado}>Certificado</LinkButton>
+              )}
+              {link && <LinkButton href={link}>FullStackOpen.com</LinkButton>}
+              {linkYoutube && (
+                <LinkButton href={linkYoutube}>
+                  <Youtube class='size-6' />
+                  Link
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      ),
+    )
+  }
 </article>
