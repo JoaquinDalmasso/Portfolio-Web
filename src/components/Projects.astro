@@ -10,6 +10,8 @@ import CSharp from '../icons/CSharp.astro';
 import SQL from '../icons/SQL.astro';
 import Arduino from '../icons/Arduino.astro';
 import Youtube from '../icons/YouTube.astro';
+import Tailwind from '../icons/Tailwind.astro';
+import TypeScript from '../icons/TypeScript.astro';
 
 const TAGS = {
   PYTHON: {
@@ -42,6 +44,16 @@ const TAGS = {
     class: 'bg-white text-[#4B8BBE] ',
     icon: Mongo,
   },
+  TAILWIND: {
+    name: 'Tailwind',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: Tailwind,
+  },
+  TYPESCRIPT: {
+    name: 'TypeScript',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: TypeScript,
+  },
   CSHARP: {
     name: 'C#',
     class: 'bg-white text-[#4B8BBE] ',
@@ -69,7 +81,16 @@ const PROJECTS = [
     github: 'https://github.com/JoaquinDalmasso/Inmobiliaria-Cliente-Demo',
     image: '/ProyectoInmobiliaria.webp',
     link: 'https://inmobiliariaarg.onrender.com',
-    tags: [TAGS.REACT, TAGS.NODE, TAGS.MONGO],
+    tags: [TAGS.REACT, TAGS.NODE, TAGS.MONGO, TAGS.TAILWIND],
+  },
+  {
+    title: 'Web para un emprendimiento real',
+    description:
+      'Este proyecto consiste en una landing page moderna y receptiva diseñada para un sitio web de readaptación fisica. El mismo esta desarrollado con React y TypeScript, cuenta con un diseño elegante y receptivo utilizando Tailwind CSS, además de Hero Icons y Framer Motion para una interfaz visualmente atractiva.',
+    github: 'https://github.com/JoaquinDalmasso/Regenetic-Gym',
+    image: '/ProyectoGimnasio.webp',
+    link: 'https://regenetic.netlify.app/',
+    tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.TAILWIND],
   },
   {
     title: 'Full Stack Open',
