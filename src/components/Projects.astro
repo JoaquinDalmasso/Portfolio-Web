@@ -10,6 +10,9 @@ import CSharp from '../icons/CSharp.astro';
 import SQL from '../icons/SQL.astro';
 import Arduino from '../icons/Arduino.astro';
 import Youtube from '../icons/YouTube.astro';
+import NextJS from '../icons/NextJS.astro';
+import NestJS from '../icons/NestJS.astro';
+import Strapi from '../icons/Strapi.astro';
 
 const TAGS = {
   PYTHON: {
@@ -52,13 +55,35 @@ const TAGS = {
     class: 'bg-white text-[#4B8BBE]',
     icon: Arduino,
   },
+  NEXTJS: {
+    name: 'NextJS',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: NextJS,
+  },
+  NESTJS: {
+    name: 'NestJS',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: NestJS,
+  },
+  STRAPI: {
+    name: 'Strapi',
+    class: 'bg-white text-[#4B8BBE] ',
+    icon: Strapi,
+  },
 };
 
 const PROJECTS = [
   {
-    title: 'Proyectos en mi actual trabajo',
+    title: 'Proyectos actuales como freelancer FullStack',
     description:
-      'Me dedico al desarrollo de aplicaciones .NET. Una de las principales funcionalidades que he desarrollado es una aplicacion integral con un inicio de sesion que verifica las credenciales en SQL para permitir el acceso a todas las aplicaciones, donde actualmente estoy trabajando en una aplicación que se conecta a las máquinas a través de la red CAN e interpreta los mensajes que estas envían. Además, he desarrollado una funcionalidad adicional que permite obtener datos de telemetría de las máquinas y generar gráficos comparativos según las preferencias del usuario.',
+      'Actualmente, me dedico al desarrollo de aplicaciones FullStack que combinan innovación y eficiencia en cada solución. Entre mis proyectos destacados se encuentra la creación de un ecommerce con una experiencia de usuario optimizada y una plataforma tipo dashboard que permite la gestión integral de los procesos empresariales. En estos desarrollos, he implementado funcionalidades robustas y escalables utilizando tecnologías modernas como NestJs, NextJs, React y Strapi, lo que me permite entregar productos de alta calidad y totalmente adaptados a las necesidades de cada cliente.',
+    image: '/WebejemploFreelancer.webp',
+    tags: [TAGS.NESTJS, TAGS.NEXTJS, TAGS.REACT, TAGS.STRAPI],
+  },
+  {
+    title: 'Proyectos en mi trabajo como analista de electrónica',
+    description:
+      'Trabaje en el desarrollo de aplicaciones .NET. Una de las principales funcionalidades que he desarrollado es una aplicacion integral con un inicio de sesion que verifica las credenciales en SQL para permitir el acceso a todas las aplicaciones, donde estuve colaborando en una aplicación que se conecta a las máquinas a través de la red CAN e interpreta los mensajes que estas envían. Además, he desarrollado una funcionalidad adicional que permite obtener datos de telemetría de las máquinas y generar gráficos comparativos según las preferencias del usuario.',
     image: '/MetalforProyectos.webp',
     tags: [TAGS.CSHARP, TAGS.SQL],
   },
