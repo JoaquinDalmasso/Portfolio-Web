@@ -1,35 +1,44 @@
 ---
-import ExperienciaItem from "./ExperienciaItem.astro"
+import ExperienciaItem from './ExperienciaItem.astro';
 
-const EXPERIENCIE =[
-    {
-        title: "Analista de electrónica en Metalfor",
-        description: "Inicialmente realizaba tareas destinadas al ruteo y planimetría del cableado eléctrico de maquinarias agrícolas, pero actualmente están enfocadas al desarrollo de aplicaciones .NET conectadas a bases de datos SQL.",
-        date: "Noviembre 2023 - actualidad",
-        link: "https://www.metalfor.com.ar"
-    },
-    {
-        title: "Analista de ingeniería de producto en Bertotto Boglione",
-        description: "Mi tarea principal era la gestión completa en la fabricación de tanques para almacenamiento de líquidos. En un principio tomaba contacto con el cliente y diseñaba un modelo 3D y los planos del equipo acorde a sus necesidades y respetando las normas aplicables en cada caso, luego que se aprobaba el plano cargaba el mismo junto con el resto de planos necesarios y todas las piezas y conjuntos necesarios en SAP. Por ultimo daba seguimiento durante todo el proceso de fabricación del equipo.",
-        date: "Enero 2022 - Noviembre 2023",
-        link: "https://bertotto-boglione.com"
-    },
-    {
-        title: "Prácticas profesionales en Maigda",
-        description: "Realice el modelo 3D de un elevador a cangilones y todas sus partes desde los planos en 2D que disponía la fabrica. Para posteriormente redactar un manual de montaje del equipo.",
-        date: "Agosto 2021 - Octubre 2021",
-        link: "https://www.maigda.com.ar"
-    }
-]
+const EXPERIENCIE = [
+  {
+    title: 'Freelancer desarrollador web',
+    description:
+      'En este nuevo emprendimiento comence el proyecto InnoView, en el que me dedico al desarrollo de aplicaciones web FullStack, abordando proyectos que van desde un ecommerce con experiencia de usuario optimizada hasta dashboards empresariales que facilitan la gestión integral de procesos. Utilizo tecnologías modernas como NestJS, NextJS, React y Strapi para construir soluciones robustas, escalables y personalizadas, adaptadas a las necesidades específicas de cada cliente.',
+    date: 'Diciembre 2024 - actualidad',
+    link: 'innoview.com.ar',
+  },
+  {
+    title: 'Analista de electrónica en Metalfor',
+    description:
+      'Inicialmente realizaba tareas destinadas al ruteo y planimetría del cableado eléctrico de maquinarias agrícolas, pero luego me enfoque al desarrollo de aplicaciones .NET conectadas a bases de datos SQL.',
+    date: 'Noviembre 2023 - Noviembre 2024',
+    link: 'https://www.metalfor.com.ar',
+  },
+  {
+    title: 'Analista de ingeniería de producto en Bertotto Boglione',
+    description:
+      'Mi tarea principal era la gestión completa en la fabricación de tanques para almacenamiento de líquidos. En un principio tomaba contacto con el cliente y diseñaba un modelo 3D y los planos del equipo acorde a sus necesidades y respetando las normas aplicables en cada caso, luego que se aprobaba el plano cargaba el mismo junto con el resto de planos necesarios y todas las piezas y conjuntos necesarios en SAP. Por ultimo daba seguimiento durante todo el proceso de fabricación del equipo.',
+    date: 'Enero 2022 - Noviembre 2023',
+    link: 'https://bertotto-boglione.com',
+  },
+  {
+    title: 'Prácticas profesionales en Maigda',
+    description:
+      'Realice el modelo 3D de un elevador a cangilones y todas sus partes desde los planos en 2D que disponía la fabrica. Para posteriormente redactar un manual de montaje del equipo.',
+    date: 'Agosto 2021 - Octubre 2021',
+    link: 'https://www.maigda.com.ar',
+  },
+];
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
-    {
-        EXPERIENCIE.map(experiencie =>(
-        <li class="mb-10 ms-4">
-            <ExperienciaItem {... experiencie} />
-        </li>
-        ))
-    }            
+<ol class='relative border-s border-gray-200 dark:border-gray-700'>
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class='mb-10 ms-4'>
+        <ExperienciaItem {...experiencie} />
+      </li>
+    ))
+  }
 </ol>
-
